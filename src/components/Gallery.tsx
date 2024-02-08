@@ -5,7 +5,7 @@ export default function Gallery() {
         <>
             <div className="py-8 md:py-14 md:w-[80%] m-auto">
                 <h1 className="text-black font-bold text-[28px] mx-auto md:text-[4rem] ml-2 w-fit head-shade">Gallery</h1>
-                <div className="flex justify-around items-center py-8 w-full">
+                <div className="flex justify-around items-center py-2 md:py-8  w-full">
                     <img
                         src={require("../assets/architecture/image-1.png").default}
                         width={100}
@@ -22,7 +22,7 @@ export default function Gallery() {
                     />
 
                 </div>
-                <div className="flex justify-around items-center py-8 w-full">
+                <div className="flex justify-around items-center py-2 md:py-8 w-full">
                     <img
                         src={require("../assets/architecture/image-3.png").default}
                         width={100}
@@ -44,7 +44,7 @@ export default function Gallery() {
                     width={100}
                     height={100}
                     alt="building img"
-                    className="w-[100%] "
+                    className="w-[100%] mt-1"
                 />
                 <div className="flex my-4 justify-center">
                     <a
