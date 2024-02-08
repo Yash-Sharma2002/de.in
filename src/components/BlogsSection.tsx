@@ -3,11 +3,12 @@ import BlogCardData from "../constants/BlogCardData";
 import BlogCardInterface from "../interface/BlogCardInterface";
 import React from "react";
 
-export default function BlogsSection() {
+export default function BlogsSection(props: { title?: string }) {
+  const title = props.title || "Blogs & articles";
   return (
     <>
-      <h1 className="py-10 text-[2.6rem] md:text-[3.2rem] font-bold p-1 text-black">
-        Blogs & articles
+      <h1 className={`py-10 text-[2.6rem] md:text-[3.2rem] font-bold p-1 text-black w-fit ${title !== "Blogs & articles" ? " head-shade" : ""}`}>
+        {title}
       </h1>
 
       <div className="w-full flex flex-row flex-wrap justify-center items-center">

@@ -13,3 +13,17 @@ input::-webkit-inner-spin-button {
 input[type=number] {
     -moz-appearance: textfield;
 }
+
+
+
+.architecture-step {
+    transition: all 0.4s ease-in;
+}
+
+.architecture-step:hover {
+    background: linear-gradient(90deg, #FFFFFF -10%, rgba(177, 225, 130, 1) 90%);
+}
+
+.head-shade {
+    background: linear-gradient(90deg, #FFFFFF -10%, rgba(177, 225, 130, 1) 90%);
+}

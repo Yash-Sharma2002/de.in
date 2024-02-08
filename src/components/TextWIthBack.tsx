@@ -14,7 +14,7 @@ export default function TextWIthBack(props: TextWithBack) {
           src={props.back}
           width={500}
           height={500}
-          className="w-full h-full object-cover brightness-50"
+          className="w-full h-full object-cover brightness-20"
           alt={props.text}
         />
         <div className="absolute inset-0 flex items-center justify-center">
