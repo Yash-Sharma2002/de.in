@@ -18,8 +18,14 @@ export default function TextWIthBack(props: TextWithBack) {
           alt={props.text}
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-white">
+          <div className="text-white text-center">
             <h1 className="text-4xl md:text-4xl font-bold ">{props.text}</h1>
+            {
+              // Optional
+              props.desc && (
+                <p className="text-sm md:text-xl w-11/12 mx-auto">{props.desc}</p>
+              )
+            }
           </div>
         </div>
       </div>

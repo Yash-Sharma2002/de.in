@@ -7,7 +7,7 @@ export default function BlogsSection(props: { title?: string }) {
   const title = props.title || "Blogs & articles";
   return (
     <>
-      <h1 className={`py-10 text-[2.6rem] md:text-[3.2rem] font-bold p-1 text-black w-fit ${title !== "Blogs & articles" ? " head-shade" : ""}`}>
+      <h1 className={`text-[1.5rem] md:text-[3.2rem] font-bold p-1 text-black w-fit ${title !== "Blogs & articles" ? " head-shade" : ""}`}>
         {title}
       </h1>
 

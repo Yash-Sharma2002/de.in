@@ -12,28 +12,34 @@ import TextWithBack from "../interface/TextWithBack";
 
 const ArchitectureData: TextWithBack[] = [
     {
-        text: "Residential Homes",
-        back: Image1
+        text: "Residential",
+        back: Image1,
+        desc:"We Design Memories where Dreams Find a Home"
     },
     {
         text: "Retail Spaces",
-        back: Image2
+        back: Image2,
+        desc:"Designing Spaces that Inspire Shopping Experiences."
     },
     {
         text: "Office Spaces",
-        back: Image3
+        back: Image3,
+        desc:"Creating Office Designs that Reflect Your Company's Vision and Values"
     },
     {
         text: "Apartment Complex",
-        back: Image4
+        back: Image4,
+        desc:"Designing Urban Sustainable Living, Where Comfort Meets Community"
     },
     {
         text: "Villas & Condos",
-        back: Image5
+        back: Image5,
+        desc:"Exquisite Living, Unmatched Elegance with Timeless Luxury Redefined"
     },
     {
         text: "Hospitality Spaces",
-        back: Image6
+        back: Image6,
+        desc:"Designing Memorable Experiences in Every Detail"
     }
 ]
 

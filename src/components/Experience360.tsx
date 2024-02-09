@@ -21,7 +21,7 @@ export default function Experience360() {
             ad repudiandae corrupti
           </p>
 
-          <a href="https://www.coohom.com/pub/tool/panorama/viewer?obsPicId=3FOCJY9TDARF&locale=en_US">
+          <a href="https://www.coohom.com/pub/tool/panorama/viewer?obsPicId=3FOCJY9TDARF&locale=en_US" className="text-black hover:text-black">
             <div className="flex py-4 items-center ">
               <div className="bg-[#FFBC11] py-2 px-6 rounded-xl font-semibold">
                 Request a Project
