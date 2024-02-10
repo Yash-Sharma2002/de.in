@@ -27,3 +27,8 @@ input[type=number] {
 .head-shade {
     background: linear-gradient(90deg, #FFFFFF -10%, rgba(177, 225, 130, 1) 90%);
 }
+
+
+.scroll-hide::-webkit-scrollbar {
+    display: none;
+  }

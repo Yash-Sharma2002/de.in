@@ -4,7 +4,7 @@ import React from "react";
 export default function Steps(props: TestimonialsInterface) {
   return (
     <>
-      <div className="text-black cursor-pointer px-[10px] md:pl-[120px] md:py-[10px]  relative architecture-step"  >
+      <div className="text-black cursor-pointer px-[10px] md:pl-[120px] py-[10px] md:py-[10px]  relative architecture-step"  >
         {
           typeof props.img === "string" ?
             <img

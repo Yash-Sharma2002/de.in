@@ -140,15 +140,16 @@ export default function ArchitecturePage() {
                 <p className="p-8 md:py-14  w-full md:w-[90%] mx-auto text-[20px] text-center text-black">
                     Begin your design journey with Design Elementary. Explore our portfolio, schedule a consultation, and collaborate on your unique concept. Receive a detailed proposal, refine the design, and celebrate the transformation of your space. Ready to start? Contact us for a personalized consultation.
                 </p>
-                <div className="flex justify-center md:justify-[unset] md:w-10/12 w-11/12 m-auto mt-4">
-                    <img
-                        src={require("../assets/architecture/architecture7.png").default}
-                        width={50}
-                        height={500}
-                        alt="image"
-                        className="w-[45%] hidden md:block"
-                    />
-                    <div>
+                <div className="flex justify-center md:justify-[unset] md:w-10/12 w-11/12 m-auto mt-4 h-fit">
+                    <div className="w-[45%] hidden md:block h-auto" style={{
+                        backgroundImage: `url(${require("../assets/architecture/architecture7.png").default})`,
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                        backgroundRepeat: "no-repeat"
+                    }}>
+
+                    </div>
+                    <div className="w-full md:w-1/2">
                         <Steps
                             img={<svg className="w-[30px] h-[45px] md:w-[unset] md:h-[unset]" width="17" height="63" viewBox="0 0 17 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <mask id="path-1-outside-1_441_3557" maskUnits="userSpaceOnUse" x="-1" y="-1" width="19" height="65" fill="black">
@@ -229,7 +230,7 @@ export default function ArchitecturePage() {
                 </div>
             </div>
 
-            <div className="border border-black py-4 md:py-10  bg-[#1B454D] relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-white">
+            <div className="border border-black py-4 md:py-5  bg-[#1B454D] relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-white">
                 <img src={require("../assets/architecture/vector-a.png").default} alt="Vector" className="top-[10%] left-0 absolute z-0" />
                 <img src={require("../assets/architecture/vector-b.png").default} alt="Vector" className="top-[10%] right-0 absolute z-0" />
                 <div className="flex flex-col justify-center items-center py-10">
