@@ -22,7 +22,7 @@ export default function ClientSay() {
 
     return (
         <>
-            <div className=" relative mt-10 bg-[#1B454D] py-2">
+            <div className=" relative bg-[#1B454D] py-2">
                 <img
                     src={require("../assets/architecture/vector1.png").default}
                     alt="Vector"

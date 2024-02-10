@@ -6,5 +6,6 @@ export default interface TestimonialsInterface{
     title: string | React.ReactNode,
     description: string | React.ReactNode
     link?: string;
+    number?: number;
     
 }

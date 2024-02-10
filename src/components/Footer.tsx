@@ -20,7 +20,7 @@ export default function Footer() {
 					</div>
 				</div>
 				<p className="text-[12px] font-[500] mt-3">
-					© 2023 Design Elementary. All rights reserved
+					© 2024 Design Elementary. All rights reserved
 				</p>
 			</div>
 

@@ -8,6 +8,7 @@ import Title from "../components/Title";
 import Experience360 from "../components/Experience360";
 import Gallery from "../components/Gallery";
 import ClientSay from "../components/ClientSay";
+import { TiTick } from "react-icons/ti";
 
 
 export default function ArchitecturePage() {
@@ -105,23 +106,32 @@ export default function ArchitecturePage() {
             <div className="flex justify-center  ">
                 <div
                     style={{ backgroundImage: `url(${require("../assets/architecture/architecture5.png").default})` }}
-                    className="bg-cover bg-center relative h-[310px] md:py-8 w-11/12 m-auto "
+                    className="bg-cover bg-center relative  md:py-8 w-11/12 m-auto "
                 >
                     <div className="w-full h-full absolute top-0 left-0 z-10" style={{
                         background: "linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(217, 217, 217, 0) 100%)"
                     }}>
 
                     </div>
-                    <div className="relative z-10">
+                    <div className="relative z-10 py-6 md:py-0">
 
                         <h1 className="text-[35px] mt-6 md:mt-0 md:text-[4rem] text-white font-[Italiana] pl-4 md:pl-20">
-                            Design Your Home <span className="font-bold text-[yellow]">₹11 / Sq.Ft</span>
+                            Design Your Home <span className="font-bold text-[yellow]"> <br className="block md:hidden" /> ₹11 / Sq.Ft</span>
                         </h1>
-                        <p className="md:text-[26px] text-white w-1/2 py-6 ml-[30px] md:ml-[84px]">
-                            Affordable Luxury
-                            <br />
-                            Unmatched Quality
+                        <p className="text-white pl-4 md:pl-20">
+                            3D Elevation | Structural Design | Electrical & Plumbing Design | 360'View
                         </p>
+                        <div className="py-6">
+                            <div className="flex justify-start item-center md:text-[26px] text-white ml-[30px] md:ml-[84px]">
+                                <TiTick className="text-[yellow] mr-2 md:text-[30px] mt-1" />
+                                <p>  Affordable Luxury</p>
+                            </div>
+                            <div className="flex justify-start item-center md:text-[26px] text-white ml-[30px] md:ml-[84px]">
+                                <TiTick className="text-[yellow] mr-2 md:text-[30px] mt-1" />
+                                <p>    Unmatched Quality</p>
+                            </div>
+                        </div>
+
                         <a
                             href={"https://justcall.io/calendar/DesignElementary"}
                             className="bg-[#E93B3B] shadow-lg ml-[30px] md:ml-[84px] text-white text-sm md:text-xl font-semibold p-2 px-4 md:px-6 rounded-3xl mr-2"
@@ -137,7 +147,7 @@ export default function ArchitecturePage() {
                 <h1 className="font-bold md:text-[40px] text-[28px] text-center text-black head-shade w-fit mx-auto">
                     Ready To Transform Your Space ?
                 </h1>
-                <p className="p-8 md:py-14  w-full md:w-[90%] mx-auto text-[20px] text-center text-black">
+                <p className="p-8 md:py-14 w-full md:w-[90%] mx-auto md:text-[20px] text-[16px] text-center text-black">
                     Begin your design journey with Design Elementary. Explore our portfolio, schedule a consultation, and collaborate on your unique concept. Receive a detailed proposal, refine the design, and celebrate the transformation of your space. Ready to start? Contact us for a personalized consultation.
                 </p>
                 <div className="flex justify-center md:justify-[unset] md:w-10/12 w-11/12 m-auto mt-4 h-fit">
@@ -151,20 +161,22 @@ export default function ArchitecturePage() {
                     </div>
                     <div className="w-full md:w-1/2">
                         <Steps
+                        number={1}
                             img={<svg className="w-[30px] h-[45px] md:w-[unset] md:h-[unset]" width="17" height="63" viewBox="0 0 17 63" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <mask id="path-1-outside-1_441_3557" maskUnits="userSpaceOnUse" x="-1" y="-1" width="19" height="65" fill="black">
-                                        <rect fill="white" x="-1" y="-1" width="19" height="65" />
-                                        <path d="M0.264 8.02736V0.898101H16.4122V63H8.5099V8.02736H0.264Z" />
-                                    </mask>
-                                    <path d="M0.264 8.02736H-0.736V9.02736H0.264V8.02736ZM0.264 0.898102V-0.1019H-0.736V0.898102H0.264ZM16.4122 0.898102H17.4122V-0.1019H16.4122V0.898102ZM16.4122 63V64H17.4122V63H16.4122ZM8.5099 63H7.5099V64H8.5099V63ZM8.5099 8.02736H9.5099V7.02736H8.5099V8.02736ZM1.264 8.02736V0.898102H-0.736V8.02736H1.264ZM0.264 1.8981H16.4122V-0.1019H0.264V1.8981ZM15.4122 0.898102V63H17.4122V0.898102H15.4122ZM16.4122 62H8.5099V64H16.4122V62ZM9.5099 63V8.02736H7.5099V63H9.5099ZM8.5099 7.02736H0.264V9.02736H8.5099V7.02736Z" fill="#34846A" mask="url(#path-1-outside-1_441_3557)" />
-                                </svg>
-}
+                                <mask id="path-1-outside-1_441_3557" maskUnits="userSpaceOnUse" x="-1" y="-1" width="19" height="65" fill="black">
+                                    <rect fill="white" x="-1" y="-1" width="19" height="65" />
+                                    <path d="M0.264 8.02736V0.898101H16.4122V63H8.5099V8.02736H0.264Z" />
+                                </mask>
+                                <path d="M0.264 8.02736H-0.736V9.02736H0.264V8.02736ZM0.264 0.898102V-0.1019H-0.736V0.898102H0.264ZM16.4122 0.898102H17.4122V-0.1019H16.4122V0.898102ZM16.4122 63V64H17.4122V63H16.4122ZM8.5099 63H7.5099V64H8.5099V63ZM8.5099 8.02736H9.5099V7.02736H8.5099V8.02736ZM1.264 8.02736V0.898102H-0.736V8.02736H1.264ZM0.264 1.8981H16.4122V-0.1019H0.264V1.8981ZM15.4122 0.898102V63H17.4122V0.898102H15.4122ZM16.4122 62H8.5099V64H16.4122V62ZM9.5099 63V8.02736H7.5099V63H9.5099ZM8.5099 7.02736H0.264V9.02736H8.5099V7.02736Z" fill="#34846A" mask="url(#path-1-outside-1_441_3557)" />
+                            </svg>
+                            }
                             title="Explore inspiring designs"
                             description="Let us guide you through our diverse portfolio and bring your vision to life."
                         />
 
                         <Steps
-                            img={<svg className="w-[30px] h-[45px] md:w-[unset] md:h-[unset]" width="42" height="64" viewBox="0 0 42 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        number={2}
+                        img={<svg className="w-[30px] h-[45px] md:w-[unset] md:h-[unset]" width="42" height="64" viewBox="0 0 42 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <mask id="path-1-outside-1_441_3561" maskUnits="userSpaceOnUse" x="-1" y="-1" width="44" height="66" fill="black">
                                     <rect fill="white" x="-1" y="-1" width="44" height="66" />
                                     <path d="M0.380632 57.7297C7.65305 51.8888 13.3507 47.1074 17.4737 43.3853C21.5966 39.6059 25.0611 35.6834 27.8669 31.6177C30.7301 27.4947 32.1617 23.4577 32.1617 19.5065C32.1617 15.7844 31.2455 12.864 29.4131 10.7453C27.6379 8.56926 24.7461 7.48126 20.7377 7.48126C16.8438 7.48126 13.8088 8.71242 11.6328 11.1747C9.51411 13.5798 8.36884 16.8152 8.19705 20.8808H0.638316C0.867369 14.4674 2.81432 9.5141 6.47916 6.02105C10.144 2.528 14.8682 0.781468 20.6518 0.781468C26.5499 0.781468 31.2168 2.41347 34.6526 5.67747C38.1457 8.94147 39.8922 13.4366 39.8922 19.1629C39.8922 23.9158 38.4606 28.5541 35.5975 33.0779C32.7916 37.5444 29.5848 41.4956 25.9773 44.9314C22.3697 48.3099 17.76 52.2611 12.1482 56.7848H41.696V63.3128H0.380632V57.7297Z" />
@@ -177,7 +189,8 @@ export default function ArchitecturePage() {
                         />
 
                         <Steps
-                            img={<svg className="w-[30px] h-[45px] md:w-[unset] md:h-[unset]" width="42" height="65" viewBox="0 0 42 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        number={3}
+                        img={<svg className="w-[30px] h-[45px] md:w-[unset] md:h-[unset]" width="42" height="65" viewBox="0 0 42 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <mask id="path-1-outside-1_441_3564" maskUnits="userSpaceOnUse" x="-1" y="-1" width="44" height="67" fill="black">
                                     <rect fill="white" x="-1" y="-1" width="44" height="67" />
                                     <path d="M1.15368 17.5309C1.55453 12.2627 3.58737 8.13979 7.25221 5.1621C10.9171 2.18442 15.6699 0.695575 21.5107 0.695575C25.4046 0.695575 28.7545 1.41137 31.5604 2.84295C34.4236 4.21726 36.5709 6.10694 38.0025 8.512C39.4914 10.917 40.2358 13.6371 40.2358 16.672C40.2358 20.2223 39.2051 23.2859 37.1436 25.8627C35.1394 28.4396 32.5053 30.1002 29.2413 30.8446V31.2741C32.9634 32.1903 35.9124 33.9941 38.0884 36.6855C40.2644 39.3768 41.3524 42.8985 41.3524 47.2505C41.3524 50.5145 40.608 53.4636 39.1192 56.0977C37.6303 58.6745 35.3971 60.7074 32.4194 62.1962C29.4417 63.6851 25.8627 64.4295 21.6825 64.4295C15.6126 64.4295 10.6307 62.8547 6.73684 59.7053C2.84295 56.4985 0.666948 51.9747 0.208842 46.1339H7.76758C8.16842 49.5697 9.57137 52.3756 11.9764 54.5516C14.3815 56.7276 17.5882 57.8156 21.5966 57.8156C25.6051 57.8156 28.64 56.7848 30.7015 54.7234C32.8202 52.6046 33.8796 49.8846 33.8796 46.5634C33.8796 42.2686 32.448 39.1764 29.5848 37.2867C26.7217 35.3971 22.3983 34.4522 16.6147 34.4522H14.6392V27.9242H16.7006C21.9688 27.8669 25.9486 27.008 28.64 25.3474C31.3314 23.6295 32.6771 20.9954 32.6771 17.445C32.6771 14.4101 31.6749 11.9764 29.6707 10.144C27.7238 8.31158 24.9179 7.39536 21.2531 7.39536C17.7027 7.39536 14.8396 8.31158 12.6636 10.144C10.4876 11.9764 9.19916 14.4387 8.79832 17.5309H1.15368Z" />
@@ -190,6 +203,7 @@ export default function ArchitecturePage() {
                         />
 
                         <Steps
+                        number={4}
                             img={<svg className="w-[30px] h-[45px] md:w-[unset] md:h-[unset]" width="49" height="62" viewBox="0 0 49 62" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <mask id="path-1-outside-1_441_3567" maskUnits="userSpaceOnUse" x="-1" y="-1" width="51" height="64" fill="black">
                                     <rect fill="white" x="-1" y="-1" width="51" height="64" />
@@ -203,6 +217,7 @@ export default function ArchitecturePage() {
                         />
 
                         <Steps
+                        number={5}
                             img={<svg className="w-[30px] h-[45px] md:w-[unset] md:h-[unset]" width="43" height="64" viewBox="0 0 43 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <mask id="path-1-outside-1_441_3570" maskUnits="userSpaceOnUse" x="-1" y="-1" width="45" height="66" fill="black">
                                     <rect fill="white" x="-1" y="-1" width="45" height="66" />
@@ -222,7 +237,7 @@ export default function ArchitecturePage() {
 
             {/* Section 4 */}
             <div className="py-10 w-[95%] md:w-[80%] m-auto">
-                <h1 className="text-black font-bold mb-5 text-[2rem]">Our Services</h1>
+                <h1 className="text-black font-bold text-[28px] mx-auto md:text-[3rem] ml-2 w-fit head-shade my-2">Our Services</h1>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {ArchitectureData.map((item, index) => {
                         return <TextWIthBack {...item} key={index} clasName="w-full" />;
@@ -233,7 +248,7 @@ export default function ArchitecturePage() {
             <div className="border border-black py-4 md:py-5  bg-[#1B454D] relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-white">
                 <img src={require("../assets/architecture/vector-a.png").default} alt="Vector" className="top-[10%] left-0 absolute z-0" />
                 <img src={require("../assets/architecture/vector-b.png").default} alt="Vector" className="top-[10%] right-0 absolute z-0" />
-                <div className="flex flex-col justify-center items-center py-10">
+                <div className="flex flex-col justify-center items-center">
                     <img
                         src={require("../assets/architecture/logo1.png").default}
                         className="w-[4.5rem]"

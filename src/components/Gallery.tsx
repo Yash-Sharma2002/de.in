@@ -4,7 +4,7 @@ export default function Gallery() {
     return (
         <>
             <div className="py-8 md:py-14 md:w-[80%] m-auto">
-                <h1 className="text-black font-bold text-[28px] mx-auto md:text-[4rem] ml-2 w-fit head-shade">Gallery</h1>
+                <h1 className="text-black font-bold text-[28px] mx-auto md:text-[3rem] ml-2 w-fit head-shade">Gallery</h1>
                 <div className="flex justify-around items-center py-2 md:py-8  w-full">
                     <img
                         src={require("../assets/architecture/image-1.png").default}
@@ -49,7 +49,7 @@ export default function Gallery() {
                 <div className="flex my-4 justify-center">
                     <a
                         href={"https://justcall.io/calendar/DesignElementary"}
-                        className="bg-[#E93B3B] hover:bg-red-600 shadow-lg mx-auto text-white text-sm px-4 md:text-xl font-semibold p-2 md:px-6 rounded-3xl mr-2"
+                        className="bg-[#E93B3B] hover:bg-red-600 shadow-lg mx-auto text-white text-sm px-4 md:text-xl font-semibold p-2 md:px-6 rounded-3xl "
                     >
                         Book free consultation &rarr;
                     </a>
