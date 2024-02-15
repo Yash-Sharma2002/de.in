@@ -14,7 +14,7 @@ export default function ArchitecturePage() {
     <>
       <Title title="Architecture Deisgn | Design Elementary" />
       <div className="w-11/12 md:w-10/12 mx-auto py-3">
-        <a href="/">
+      <a href="/" className="mx-auto my-3 flex justify-end">
           <img
             src={require("../assets/navlogo.svg").default}
             alt="Design Elementary"
