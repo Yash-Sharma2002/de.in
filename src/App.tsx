@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
 
 const Main = React.lazy(() => import("./pages/Main"));
 const About = React.lazy(() => import("./pages/About"));
@@ -29,6 +30,7 @@ function App() {
           <Route path="/terms-and-conditions" element={<TermsConditions />} />
           <Route path="/policies" element={<Policies />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/blogs/:id" element={<Blog />} />
         </Routes>
       </BrowserRouter>
       <Footer />

@@ -7,21 +7,17 @@ export default function BlogsSection(props: { title?: string }) {
   const title = props.title || "Blogs & articles";
   return (
     <>
-      <h1 className={`text-black font-bold text-[28px] mx-auto md:text-[3rem] ml-2 w-fit head-shade ${title !== "Blogs & articles" ? " head-shade" : ""}`}>
+      <h1
+        className={`text-black font-bold text-[28px] mx-auto md:text-[3rem] my-3 ml-2 w-fit head-shade ${
+          title !== "Blogs & articles" ? " head-shade" : ""
+        }`}
+      >
         {title}
       </h1>
 
       <div className="w-full flex flex-row flex-wrap justify-center items-center">
         {BlogCardData.map((blog: BlogCardInterface, index) => {
-          return (
-            <BlogCard
-              image={blog.image}
-              title={blog.title}
-              date={blog.date}
-              link={blog.link}
-              key={index}
-            />
-          );
+          return <BlogCard {...blog} key={index} />;
         })}
       </div>
 

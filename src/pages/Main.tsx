@@ -360,7 +360,7 @@ export default function ArchitecturePage() {
 
       {/* Section 4 */}
       <div className="py-10 w-[95%] md:w-[80%] m-auto">
-        <h1 className="text-black font-bold text-[28px] mx-auto md:text-[3rem] ml-2 w-fit head-shade my-2">
+        <h1 className="text-black font-bold text-[28px] mx-auto md:text-[3rem] ml-2 w-fit head-shade my-6">
           Our Services
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
