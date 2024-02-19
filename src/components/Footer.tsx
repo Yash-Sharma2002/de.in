@@ -50,7 +50,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="flex w-full justify-between items-center flex-col md:flex-row">
-          <p className="text-[12px] font-[500] mt-3 font-semibold">
+          <p className="text-[12px] mt-3 font-semibold">
             © 2024 Design Elementary. All rights reserved
           </p>
           <p className="text-[16px] font-[900] bg-[#005B3E] px-3 py-2 text-white mt-3 rounded-xl">Servicing Pan India</p>
