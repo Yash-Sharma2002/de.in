@@ -14,6 +14,15 @@ export default function Footer() {
           </a>
 
           <div className="flex justify-around item-center flex-col md:flex-row mt-4 md:mt-[unset]">
+          <a
+              className="mx-2 text-black hover:text-black text-lg font-bold"
+              href="/"
+            >
+              DesignAI
+            </a>
+            <span className="hidden md:block text-black hover:text-black text-lg font-bold">
+              |
+            </span>
             <a
               className="mx-2 text-black hover:text-black text-lg font-bold"
               href="/about"
