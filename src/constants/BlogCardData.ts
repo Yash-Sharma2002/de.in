@@ -9,11 +9,13 @@ import Image5 from "../assets/blogs/blog3/1.jpeg";
 import Image6 from "../assets/blogs/blog3/2.jpeg";
 import Image7 from "../assets/blogs/blog4/1.jpeg";
 import Image8 from "../assets/blogs/blog4/2.jpeg";
+import Image9 from "../assets/blogs/blog5/1.jpg";
+import Image10 from "../assets/blogs/blog6/1.jpeg";
 
 
 const BlogCardData: BlogCardInterface[] = [
   {
-    id: 1,
+    id: "role-of-architectural-services",
     title:
       "The Vital Role of Architectural Services in Shaping Our Built Environment",
     shortdescription: [
@@ -43,7 +45,7 @@ const BlogCardData: BlogCardInterface[] = [
     btnname: `Let’s dive in!`,
   },
   {
-    id: 2,
+    id: "urban-oasis",
     title: "Urban Oasis: Exploring Sustainable Architecture for Modern Cities",
     shortdescription: [
       "In the hustle and bustle of modern cities, the concept of an urban oasis is more than just a dream—it's a necessity. As our urban landscapes continue to grow and evolve, architects and designers are embracing sustainable principles to create spaces that not only thrive in the urban environment but also contribute to a greener, healthier future. Let's delve into the world of sustainable architecture and discover how it's shaping the cities of tomorrow.",
@@ -90,7 +92,7 @@ const BlogCardData: BlogCardInterface[] = [
     ],
   },
   {
-    id: 3,
+    id: "designing-dreams",
     title:
       "Designing Dreams: Unveiling the Beauty of Contemporary Residential Architecture",
     shortdescription: [
@@ -144,7 +146,7 @@ const BlogCardData: BlogCardInterface[] = [
     ],
   },
   {
-    id: 4,
+    id: "beyond-blueprints",
     title:"Beyond Blueprints: Navigating the World of Innovative Commercial Architecture",
     shortdescription:[
       "Commercial architecture goes beyond mere functionality—it's an art form that shapes the way we work, shop, and interact with our surroundings. From iconic skyscrapers to innovative retail spaces, the world of commercial architecture is a dynamic landscape where creativity, functionality, and innovation converge. Join us as we embark on a journey through the realm of innovative commercial architecture and explore the cutting-edge designs that are reshaping our cities and communities."
@@ -180,6 +182,73 @@ const BlogCardData: BlogCardInterface[] = [
       {
         text:["In conclusion, commercial architecture is a dynamic and ever-evolving field that shapes the way we live, work, and interact with our surroundings. From iconic skyscrapers to innovative retail spaces and sustainable office buildings, the world of commercial architecture is a testament to human creativity, ingenuity, and vision. Join us as we navigate this fascinating world beyond blueprints and discover the innovative designs that are shaping the future of our cities and communities."]
       },
+    ]
+  },
+  {
+    id:"why-do-we-need-an-architect",
+    title:"हमें वास्तुकार की आवश्यकता क्यों है?",
+    imgmain:Image9,
+    date:"Jan 10, 2024",
+    shortdescription:[
+      "वास्तुकार एक महत्वपूर्ण व्यक्ति है जो हमारे आवास या व्यावसायिक स्थल के निर्माण में हमें मदद करता है। वास्तुकार की आवश्यकता कई कारणों से हो सकती है, जिनमें अनुरोध, नए निर्माण की योजना, या पुराने इमारतों का पुनर्निर्माण शामिल है।"
+    ],
+    desc:[
+      {
+        head:"क्यों वास्तुकार की आवश्यकता होती है?",
+        text:["वास्तुकार की आवश्यकता नए निर्माण की योजना को व्यावसायिक और आस्थेटिक दृष्टिकोण से संरचित करने के लिए होती है। वे स्थापत्यकला के माध्यम से स्थल के लिए सर्वोत्तम उपाय तैयार करते हैं जो सुरक्षित, स्थायी, और सुगम रहते हैं। वे संरचना के निर्माण की प्रक्रिया में लोगों की सुरक्षा और सुविधा को ध्यान में रखते हुए काम करते हैं।"]
+      },
+      {
+        head:"कैसे वास्तुकार सहायक हो सकता है?",
+      },
+      {
+        head:"वास्तुकार हमें निम्नलिखित क्षेत्रों में सहायता कर सकते हैं:",
+        text:[
+          "डिज़ाइन और निर्माण की योजना वास्तुकार स्थल का व्यापारिक और सांस्कृतिक डिज़ाइन करने में मदद करता है। वह फ्लोर प्लान, इलेवेशन, और अन्य नक्शे तैयार करता है जो निर्माण की प्रक्रिया को संगठित करते हैं।",
+          "संरचना की सुरक्षा और सुरक्षा वास्तुकार संरचना की सुरक्षा और सुरक्षा को महत्वपूर्ण मानते हैं। वे भूकंप, आग, और अन्य आपदा स्थितियों के लिए उपायों की योजना तैयार करते हैं।",
+          "ऊर्जा संरचना वास्तुकार ऊर्जा कार्यवाही की योजना बनाते हैं जो स्थानीय पर्यावरण और ऊर्जा दक्षता को ध्यान में रखते हुए उपायों को पेश करते हैं।"
+        ]
+      },
+      {
+        head:"समापन",
+        text:["वास्तुकार निर्माण के हर पहलू में महत्वपूर्ण भूमिका निभाता है। उनकी योजना और डिज़ाइन की मान्यता से स्थल का निर्माण सुगम और सुरक्षित होता है। इसलिए, वास्तुकार की आवश्यकता निर्माण के किसी भी प्रक्रिया में अवश्य होती है।"]
+      }
+    ]
+  },
+  {
+    title:"आर्किटेक्ट द्वारा दी जाने वाली सेवाएँ",
+    id:"services-by-architect",
+    imgmain:Image10,
+    date:"Feb 20, 2024",
+    shortdescription:["आर्किटेक्ट द्वारा दी जाने वाली सेवाएँ विभिन्न प्रकार की होती हैं और ग्राहक की आवश्यकताओं के अनुसार उन्हें साजित किया जाता है। यहाँ कुछ मुख्य सेवाएँ हैं:"],
+    desc:[
+      {
+        head:"डिज़ाइन कंसल्टेशन:",
+        text:["आर्किटेक्ट ग्राहक के साथ मिलकर उनकी आवश्यकताओं का विश्लेषण करता है और नए निर्माण या रिनोवेशन के लिए उपयुक्त डिज़ाइन की सलाह देता है।"]
+      },
+      {
+        head:"डिज़ाइन ड्राफ्टिंग:",
+        text:["आर्किटेक्ट द्वारा स्थापत्य डिज़ाइन के नक्शे बनाए जाते हैं जो कि निर्माण प्रक्रिया के लिए आवश्यक होते हैं।"]
+      },
+      {
+        head:"निर्माण संचालन:",
+        text:["कुछ आर्किटेक्ट ग्राहक के प्रोजेक्ट को संचालित करने में सहायक होते हैं और निर्माण की प्रक्रिया को निर्देशित करते हैं।"]
+      },
+      {
+        head:"वास्तु निरीक्षण:",
+        text:["आर्किटेक्ट स्थल पर निरीक्षण करते हैं और निर्माण की गुणवत्ता, सुरक्षा और विनियमितता की जांच करते हैं।"]
+      },
+      {
+        head:"संरचना प्रबंधन:",
+        text:["कुछ आर्किटेक्ट प्रोजेक्ट की वित्तीय, समय सार्वजनिक और संगठनात्मक प्रबंधन करते हैं।"]
+      },
+      {
+        head:"इंटीरियर डिज़ाइन:",
+        text:["कई आर्किटेक्ट इंटीरियर डिज़ाइन सेवाएँ भी प्रदान करते हैं, जो व्यक्तिगत और व्यावसायिक स्थलों को सजाने में मदद करती हैं।"]
+      },
+      {
+        head:"समापन",
+        text:["इन सेवाओं के माध्यम से आर्किटेक्ट ग्राहक के प्रोजेक्ट को सफलतापूर्वक पूरा करने में मदद करते हैं और उनकी आवश्यकताओं को पूरा करने के लिए उपयुक्त समाधान प्रदान करते हैं।"]
+      }
     ]
   }
 ];

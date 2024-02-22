@@ -15,8 +15,8 @@ export default function Blog() {
   const [left, setLeft] = React.useState<BlogCardInterface[]>([]);
 
   React.useEffect(() => {
-    const fetchData = BlogCardData.find((blog) => blog.id === parseInt(id));
-    const fetchLeft = BlogCardData.filter((blog) => blog.id !== parseInt(id));
+    const fetchData = BlogCardData.find((blog) => blog.id === id);
+    const fetchLeft = BlogCardData.filter((blog) => blog.id !== id);
     setLeft(fetchLeft);
     setData(fetchData);
   }, [id]);

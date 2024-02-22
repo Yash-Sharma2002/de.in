@@ -1,5 +1,5 @@
 export default interface BlogCardInterface {
-    id: number;
+    id: string;
     title: string;
     topText: string;
     shortdescription: string[];
