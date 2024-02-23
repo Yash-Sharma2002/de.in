@@ -1,17 +1,11 @@
 import React from "react";
+import Header from "../components/Header";
 
 export default function Contact() {
   return (
     <>
+    <Header />
       <div className="w-11/12 md:w-10/12 mx-auto py-8 text-black">
-      <a href="/" className="mx-auto my-3 flex justify-end">
-          <img
-            src={require("../assets/navlogo.svg").default}
-            alt="Design Elementary"
-            width={200}
-            height={16}
-          />
-        </a>
         <h1 className="font-black text-[2rem] md:text-[3rem] my-3 font-[Italiana]">
           Contact Us
         </h1>

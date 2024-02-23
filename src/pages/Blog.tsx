@@ -4,6 +4,7 @@ import BlogCardInterface from "../interface/BlogCardInterface";
 import BlogCardData from "../constants/BlogCardData";
 import Footer from "../components/Footer";
 import { IoIosArrowForward } from "react-icons/io";
+import Header from "../components/Header";
 
 export default function Blog() {
   const { id } = useParams();
@@ -23,16 +24,9 @@ export default function Blog() {
 
   return (
     <>
+      <Header />
       <div className="bg-white py-10 ">
         <div className="w-11/12 md:w-10/12 mx-auto">
-          <a href="/" className="mx-auto my-3 flex justify-end">
-            <img
-              src={require("../assets/navlogo.svg").default}
-              alt="Design Elementary"
-              width={200}
-              height={16}
-            />
-          </a>
           <div
             className={` ${
               left && left.length > 0 ? "md:flex" : "mx-auto"

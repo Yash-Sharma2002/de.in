@@ -8,21 +8,13 @@ import Experience360 from "../components/Experience360";
 import Gallery from "../components/Gallery";
 import ClientSay from "../components/ClientSay";
 import { TiTick } from "react-icons/ti";
+import Header from "../components/Header";
 
 export default function ArchitecturePage() {
   return (
     <>
       <Title title="Architecture Deisgn | Design Elementary" />
-      <div className="w-11/12 md:w-10/12 mx-auto py-3">
-      <a href="/" className="mx-auto my-3 flex justify-end">
-          <img
-            src={require("../assets/navlogo.svg").default}
-            alt="Design Elementary"
-            width={200}
-            height={16}
-          />
-        </a>
-      </div>
+      <Header />
       <div className="flex w-[95%] md:w-[80%] justify-around py-4 md:py-10 m-auto">
         <div className="md:w-[50%] w-full text-black">
           <h1 className="text-2xl leading-8 md:text-[3rem] font-semibold md:leading-[56px] tracking-wide">
