@@ -2,7 +2,6 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import BlogCardInterface from "../interface/BlogCardInterface";
 import BlogCardData from "../constants/BlogCardData";
-import Footer from "../components/Footer";
 import { IoIosArrowForward } from "react-icons/io";
 import Header from "../components/Header";
 
@@ -109,35 +108,41 @@ export default function Blog() {
                 <>
                   <div className="divider divider-horizontal"></div>
                   <div className="sticky top-5">
-                    {left.map((blog, index) => {
-                      return (
-                        <div className="my-3 block" key={index}>
-                          <div className="w-full  my-2 mx-auto border border-[#d3cece] rounded-[40px] text-black">
-                            <img
-                              src={blog.imgmain}
-                              width={320}
-                              height={200}
-                              alt={blog.title}
-                              className="w-11/12 mx-auto mt-4 rounded-t-3xl"
-                            />
-                            <p className="text-[18px] font-semibold py-3 px-8">
-                              {blog.title}
-                            </p>
-                            {blog.date && (
-                              <div className="flex justify-between items-center py-6 px-8 ">
-                                <p className="font-semibold">{blog.date}</p>
-                                <a
-                                  href={`/blogs/${blog.id}`}
-                                  className="bg-[#479E82] p-2 rounded-full"
-                                >
-                                  <IoIosArrowForward className="text-white rounded-full text-3xl" />
-                                </a>
-                              </div>
-                            )}
+                    {left
+                      .sort(
+                        (a: BlogCardInterface, b: BlogCardInterface) =>
+                          Number(new Date(b.date)) - Number(new Date(a.date))
+                      )
+                      .map((blog, index) => {
+                        if (index > 3) return null;
+                        return (
+                          <div className="my-3 block" key={index}>
+                            <div className="w-full  my-2 mx-auto border border-[#d3cece] rounded-[40px] text-black">
+                              <img
+                                src={blog.imgmain}
+                                width={320}
+                                height={200}
+                                alt={blog.title}
+                                className="w-11/12 mx-auto mt-4 rounded-t-3xl"
+                              />
+                              <p className="text-[18px] font-semibold py-3 px-8">
+                                {blog.title}
+                              </p>
+                              {blog.date && (
+                                <div className="flex justify-between items-center py-6 px-8 ">
+                                  <p className="font-semibold">{blog.date}</p>
+                                  <a
+                                    href={`/blogs/${blog.id}`}
+                                    className="bg-[#479E82] p-2 rounded-full"
+                                  >
+                                    <IoIosArrowForward className="text-white rounded-full text-3xl" />
+                                  </a>
+                                </div>
+                              )}
+                            </div>
                           </div>
-                        </div>
-                      );
-                    })}
+                        );
+                      })}
                   </div>
                 </>
               )}
